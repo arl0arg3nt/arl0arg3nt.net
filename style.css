@@ -1,0 +1,85 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Syne Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.topbar {
+    display: flex;
+
+    margin: 1rem;
+}
+
+.header {
+    font-size: xx-large;
+    float: left;
+}
+
+.bar {
+    padding: 0.3rem;
+    margin: 1rem;
+    float: right;
+}
+
+
+
+.barlink {
+    color: white;
+    text-decoration: none;
+}
+
+.mainbody {
+    text-align: center;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 0.25rem solid rgb(196, 196, 196);
+    text-align: left;
+
+}
+
+.blog {
+    width: 100%;
+    height: fit-content;
+
+    padding-top: 0.5rem;
+    margin: 1rem;
+
+    display: flexbox;
+}
+
+.blog-body {
+    float: left;
+}
+
+.b1 {
+    display: none;
+}
+
+@media only screen and (max-width: 870px) {
+    body {
+        padding-top: 0.25rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .topbar {
+        display: block;
+    }
+
+    .header,
+    .bar {
+        float: none;
+        margin: 0%;
+    }
+}
