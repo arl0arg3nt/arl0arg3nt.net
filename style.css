@@ -31,8 +31,6 @@ body {
     float: right;
 }
 
-
-
 .barlink {
     color: white;
     text-decoration: none;
@@ -46,6 +44,11 @@ body {
     border-top: 0.25rem solid rgb(196, 196, 196);
     text-align: left;
 
+}
+
+.mainbody a {
+    color: rgb(255, 20, 243);
+    text-decoration: none;
 }
 
 .blog {
