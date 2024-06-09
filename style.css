@@ -1,88 +1,114 @@
-* {
-    padding: 0px;
+section,
+div,
+p,
+a,
+h1,
+img {
     margin: 0px;
+    padding: 0px;
 }
 
 body {
+    margin: 5rem;
+    margin-top: 0rem;
+
     background-color: black;
     color: white;
     font-family: "Syne Mono", monospace;
     font-weight: 400;
     font-style: normal;
-    padding-top: 0.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
 
-.topbar {
+.landing-page {
     display: flex;
-
-    margin: 1rem;
+    flex-wrap: wrap;
 }
 
-.header {
-    font-size: xx-large;
-    float: left;
+.lp-left-title {
+    font-size: 3rem;
+    flex: 33%;
+    padding-top: 5rem;
 }
 
 .bar {
-    padding: 0.3rem;
-    margin: 1rem;
-    float: right;
+    color: white;
+    font-size: large;
 }
 
 .barlink {
-    color: white;
+    color: #EEC6FF;
     text-decoration: none;
 }
 
-.mainbody {
-    text-align: center;
-    margin: 1rem;
-    padding-top: 1rem;
+.mainbody,
+.curs-sec {
+    padding-top: 2rem;
     padding-bottom: 1rem;
-    border-top: 0.25rem solid rgb(196, 196, 196);
     text-align: left;
 
+    font-size: large;
+
 }
 
-.mainbody a {
-    color: rgb(255, 20, 243);
-    text-decoration: none;
+.curs-sec p {
+    display: flex;
+    gap: 0.5rem
+}
+
+.curs-sec p::after {
+    content: "";
+    width: 0.4rem;
+    height: 1.3rem;
+    background: #ffffff;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+}
+
+@keyframes cursor-blink {
+    0% {
+        opacity: 0;
+    }
+}
+
+.lp-center-img {
+    flex: 33%;
+}
+
+.lp-right-img {
+    flex: 33%;
 }
 
 .blog {
     width: 100%;
     height: fit-content;
-
-    padding-top: 0.5rem;
-    margin: 1rem;
-
-    display: flexbox;
+    margin-top: 3rem;
 }
 
 .blog-body {
     float: left;
+    margin-top: 1rem;
 }
 
 .b1 {
     display: none;
 }
 
-@media only screen and (max-width: 870px) {
+@media (max-width: 1000px) {
+
     body {
-        padding-top: 0.25rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        margin: 1rem;
     }
 
-    .topbar {
-        display: block;
+    .lp-left-title,
+    .lp-right-img {
+        font-size: xx-large;
+        flex: 100%;
+        padding-top: 1rem;
     }
 
-    .header,
-    .bar {
-        float: none;
-        margin: 0%;
+    .lp-right-img {
+        padding-top: 1rem;
+        min-width: 0%;
+        width: 100%;
     }
 }
